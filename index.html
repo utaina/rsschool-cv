@@ -4,9 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV-utaina</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    some text in here
+    <header>
+        <h1>Maria Shcherbik</h1>
+        <nav>
+            <ul class='navigation'>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>About Myself</h2>
+            <p>Successful International Law graduate with 2 years of professional experience in the Consular Department of the Embassy. 
+                Currently seeking a career change to a web developer position. Driven self-starter and fast learner; my soft skills, 
+                developed in my previous position, accompanied by my creativity and curiosity will be a perfect fit for this career path.</p>
+        </section>
+        <hr>
+        <section id="skills">
+            <h2> Skills and Proficiency</h2>
+            <ul>
+                <li>HTML, CSS</li>
+                <li>JavaScript Basics</li>
+                <li>Git (remote service GitHub)</li>
+                <li>Windows OS, Linux (Ubuntu)</li>
+                <li>Figma (for web development)</li>
+                <li>Editors: Sublime, VSCode</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2>Code Example</h2>
+            <p>Convert to Binary KATA from CODEWARS: Given a non-negative integer n, write a function to_binary/ToBinary 
+                which returns that number in a binary format.</p>
+            <code>
+                function toBinary(n){ <br>
+                let rem = n; <br>
+                let bin = ''; <br>
+                <br>    
+                while (rem != 0) { <br>
+                    bin = (rem % 2) + bin; <br> 
+                    rem = Math.floor(rem / 2); <br> 
+                }; <br>
+                return Number(bin); <br>
+                } <br>
+            </code>
+        </section>
+        <hr>
+        <section>
+            <h2 class="education">Education</h2>
+            <p>Belarusian State University: LLB with a major in International Law</p>
+            <p>RS Schools Course «JavaScript/Front-end» (in progress)</p>
+        </section>
+        <hr>
+        <section>
+            <h2>Projects</h2>
+            <p><a href="https://utaina.github.io/rsschool-cv/" target="_blank">RSSchool CV</a></p>
+            <p><a href="https://rolling-scopes-school.github.io/utaina-JSFE2022Q1/shelter/pages/main/" target="_blank">RSSchool Shelter (for Desktop)</a></p>
+        </section>
+        <hr>
+        <section>
+            <h2>Languages</h2>
+            <ul class="languages">
+                <li>English - Advanced (C1)</li>
+                <li>Italian - Upper-intermediate (B2 – PLIDA certificate)</li>
+                <li>Polish - Intermediate (B1)</li>
+                <li>Spanish - Beginner (A2-B1)</li>
+                <li>Russian - Native</li>
+                <li>Belarusian - Native</li>
+            </ul>
+            <hr>
+            <p>Despite never taking an English certification exam, I’ve had plenty of practice. Communication in English was 
+                essential in my previous position as a visa officer. Part of my courses at the university was in English. Apart from that, 
+                I’ve had plenty of opportunities to participate in educational and exchange programs in English, among them:</p>
+                <ul class="english-experience">
+                    <li>Study visit to the Council of Europe and the European Court of Human Rights (ECtHR) (Strasbourg, March 2018);</li>
+                    <li>Council of Europe Winter School on European Human Rights Standards (Belarus, January- February 2018);</li>
+                    <li>Course on ECHR and ECtHR within the European Program for Human Rights Education for Legal Professionals (HELP) 
+                        (Belarus, December 2017)</li>
+                </ul>
+        </section>
+        <hr>
+        <section id="contacts">
+            <h2>Contact information</h2>
+            <p>Location: Cracow, Poland</p>
+            <p>Phone: +48 695 015 089</p> 
+            <p>E-mail: shcherbik.maria@gmail.com</p>
+            <p>Telegram: @mara_kramar</p>
+        </section>
+        <hr>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <a href="https://github.com/utaina" target="_blank">Github: utaina</a>
+            <p>Date: 14 April 2022</p>
+            <a href="https://app.rs.school/" target="_blank">
+                <img class="logo" src="/logo-rsschool3.png" alt="logo">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
